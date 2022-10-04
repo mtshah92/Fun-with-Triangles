@@ -4,28 +4,62 @@
     <title>Area of Triangle</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link href="css/style.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <a href="isTriangle.html">Is Triangle?</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="hypo.html">Check Hypotenuse</a>
-      <a href="area">Area</a>
-    </nav>
+    <header>
+      <h1>Fun with Triangles</h1>
+      <nav>
+        <a href="isTriangle.html">Is Triangle?</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="hypo.html">Check Hypotenuse</a>
+        <a href="area.html">Area</a>
+      </nav>
+    </header>
 
-    <h2>Check area of Triangle</h2>
-    <p>Area of Triangle=1/2(Base*Height)</p>
+    <main class="area-main">
+      <h2>Check area of Triangle</h2>
+      <p>Area of Triangle=1/2(Base*Height)</p>
 
-    <label for="sides">Base (in cm)</label>
-    <input type="text" class="sides" />
+      <label for="sides" class="input-label"> Base (in cm)</label>
+      <input type="text" class="sides" />
 
-    <label for="sides">Height (in cm)</label>
-    <input type="text" class="sides" />
+      <label for="sides" class="input-label"
+        ><p>Height (in cm)</p>
+        Height (in cm)</label
+      >
+      <input type="text" class="sides" />
 
-    <button id="check-area-btn">Check Area</button>
+      <button class="button" id="check-area-btn">Check Area</button>
 
-    <div id="output"></div>
+      <div id="output"></div>
+    </main>
+
+    <footer>
+      <p>© | 2021 | meetshah</p>
+      <ul class="list-unordered inline-list">
+        <li>
+          <a class="links" href="https://github.com/mtshah92" target="_blank">
+            <img src="../images/github.svg" alt="github" />
+          </a>
+        </li>
+        <li>
+          <a
+            class="links"
+            href="https://www.instagram.com/meet.shah_1098/"
+            target="_blank"
+          >
+            <img src="../images/instagram.svg" alt="instagram" />
+          </a>
+        </li>
+        <li>
+          <a class="links" href="https://twitter.com/mtshah92" target="_blank">
+            <img src="../images/twitter.svg" alt="twitter" />
+          </a>
+        </li>
+        <li></li>
+      </ul>
+    </footer>
 
     <script src="area.js"></script>
   </body>

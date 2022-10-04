@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Triangle Quiz</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <a href="isTriangle.html">Is Triangle?</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="hypo.html">Check Hypotenuse</a>
-      <a href="area">Area</a>
-    </nav>
-
+    <header>
+      <h1>Fun with Triangles</h1>
+      <nav>
+        <a href="isTriangle.html">Is Triangle?</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="hypo.html">Check Hypotenuse</a>
+        <a href="area.html">Area</a>
+      </nav>
+    </header>
+     
+    <main>
     <h2>Triangle Quiz</h2>
     <form class="quiz-container">
       <p>
@@ -22,9 +27,9 @@
       </p>
 
       <div class="question-container">
-        <label> <input type="radio" name="question1" value="45°" />45°</label>
-        <label> <input type="radio" name="question1" value="60°" />60°</label>
-        <label> <input type="radio" name="question1" value="90°" />90°</label>
+        <label> <input   type="radio" name="question1" value="45°" />45°</label>
+        <label> <input  type="radio" name="question1" value="60°" />60°</label>
+        <label> <input  type="radio" name="question1" value="90°" />90°</label>
       </div>
 
       <div class="question-container">
@@ -41,9 +46,42 @@
         >
       </div>
 
-      <button id="submit-btn">Submit Answer</button>
+      
+      <button class="button" id="submit-btn">Submit Answer</button>
+    
 
       <div id="output"></div>
+    </main>
+
+      <footer>
+        <p>© | 2021 | meetshah</p>
+        <ul class="list-unordered inline-list">
+          <li>
+            <a class="links" href="https://github.com/mtshah92" target="_blank">
+              <img src="../images/github.svg" alt="github" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="links"
+              href="https://www.instagram.com/meet.shah_1098/"
+              target="_blank"
+            >
+              <img src="../images/instagram.svg" alt="instagram" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="links"
+              href="https://twitter.com/mtshah92"
+              target="_blank"
+            >
+              <img src="../images/twitter.svg" alt="twitter" />
+            </a>
+          </li>
+          <li></li>
+        </ul>
+      </footer>
 
       <script src="quiz.js"></script>
     </form>

@@ -4,27 +4,58 @@
     <title>isTriangle</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link href="css/style.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <a href="isTriangle.html">Is Triangle?</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="hypo.html">Check Hypotenuse</a>
-      <a href="area">Area</a>
-    </nav>
+    <header>
+      <h1>Fun with Triangles</h1>
+      <nav>
+        <a href="isTriangle.html">Is Triangle?</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="hypo.html">Check Hypotenuse</a>
+        <a href="area.html">Area</a>
+      </nav>
+    </header>
 
-    <h1>isTriangle</h1>
-    <label for="angle">Angle1</label>
-    <input type="text" class="angle" />
-    <label for="angle">Angle2</label>
-    <input type="text" class="angle" />
-    <label for="angle">Angle3</label>
-    <input type="text" class="angle" />
+    <main>
+      <h1>isTriangle</h1>
+      <label for="angle" class="input-label">Angle1</label>
+      <input type="text" class="angle" />
+      <label for="angle" class="input-label">Angle2</label>
+      <input type="text" class="angle" />
+      <label for="angle" class="input-label">Angle3</label>
+      <input type="text" class="angle" />
 
-    <button id="chek-btn">Check</button>
+      <button class="button" id="chek-btn">Check</button>
 
-    <div id="output"></div>
+      <div id="output"></div>
+    </main>
+
+    <footer>
+      <p>© | 2021 | meetshah</p>
+      <ul class="list-unordered inline-list">
+        <li>
+          <a class="links" href="https://github.com/mtshah92" target="_blank">
+            <img src="../images/github.svg" alt="github" />
+          </a>
+        </li>
+        <li>
+          <a
+            class="links"
+            href="https://www.instagram.com/meet.shah_1098/"
+            target="_blank"
+          >
+            <img src="../images/instagram.svg" alt="instagram" />
+          </a>
+        </li>
+        <li>
+          <a class="links" href="https://twitter.com/mtshah92" target="_blank">
+            <img src="../images/twitter.svg" alt="twitter" />
+          </a>
+        </li>
+        <li></li>
+      </ul>
+    </footer>
 
     <script src="isTriangle.js"></script>
   </body>
