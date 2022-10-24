@@ -4,7 +4,7 @@ const output = document.querySelector("#output");
 
 function calculateTheValue(a, b) {
   const area = 0.5 * (a * b);
-  return area;
+  return area.toFixed(2);
 }
 
 function calculateArea() {
@@ -13,7 +13,15 @@ function calculateArea() {
     Number(sides[1].value)
   );
 
-  output.innerText = "Area of Traingle is " + value;
+  if (sides[0].value !== "" && sides[1].value !== "") {
+    if (sides[0].value > 0 && sides[1].value > 0) {
+      output.innerText = "Area of Traingle is " + value;
+    } else {
+      output.innerText = "Area and Height Should be Greater than Zero";
+    }
+  } else {
+    output.innerText = "Please Enter both Fields";
+  }
 }
 
 checkAreabutton.addEventListener("click", calculateArea);

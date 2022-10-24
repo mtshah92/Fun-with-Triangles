@@ -16,7 +16,7 @@ function checkAnswers() {
     index = index + 1;
   }
 
-  output.innerText = "Your score is " + score;
+  output.innerHTML = "Your score is " + score;
 }
 
 submitBtn.addEventListener("click", checkAnswers);

@@ -13,11 +13,18 @@ function IsTriangle() {
     Number(angle[1].value),
     Number(angle[2].value)
   );
-
-  if (sumofAngles === 180) {
-    output.innerText = "Yay! The Triangle is formed by angles";
+  if (angle[0].value !== "" && angle[1].value !== "" && angle[2].value !== "") {
+    if (angle[0].value > 0 && angle[1].value > 0 && angle[2].value > 0) {
+      if (sumofAngles === 180) {
+        output.innerText = "Yay! The Triangle is formed by angles";
+      } else {
+        output.innerText = "OOPs! Traingle can not form by this angle.";
+      }
+    } else {
+      output.innerText = "All Angles Should be Greater Than Zero.";
+    }
   } else {
-    output.innerText = "OOPs! Traingle can not form by this angle.";
+    output.innerText = "Please Enter all input fields";
   }
 }
 

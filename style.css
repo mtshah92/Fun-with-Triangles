@@ -14,6 +14,11 @@
 body {
   font-family: "Work Sans", sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -56,6 +61,14 @@ main h1 {
   margin: 1rem;
 }
 
+.area-formula {
+  padding: 1rem;
+}
+
+.area-span {
+  background-color: aliceblue;
+  border-radius: 3rem;
+}
 .input-text {
   font-size: 14px;
   outline: #fff;
@@ -71,6 +84,18 @@ main h1 {
   font-size: larger;
   color: var(--primary-color);
   width: 256px;
+}
+
+.quiz-container {
+  padding: 1rem 1rem;
+}
+
+.quiz-que1 {
+  padding: 0.5rem;
+}
+
+.quiz-que2 {
+  padding: 0.5rem;
 }
 
 .button {
@@ -90,26 +115,34 @@ main h1 {
   font-size: x-large;
   margin: 1rem;
 }
+
 /* footer */
 
 footer {
-  text-align: center;
-  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: auto;
+  padding: 1rem;
+  gap: 1.5rem;
+  background-color: #7c3aed;
 }
 
-footer p {
-  font-size: large;
+.footer-heading {
   text-align: center;
 }
 
-a,
-img,
-li {
+ul {
+  display: flex;
+  justify-content: center;
+}
+.footer-list li {
   display: inline;
-  color: #fff;
 }
 
-img {
-  width: 40px;
-  padding: 1rem 0.2rem;
+.links {
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
