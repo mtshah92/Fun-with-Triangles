@@ -16,7 +16,8 @@ function calculateHypotenuse() {
 
   if (sides[0].value !== "" && sides[1].value !== "") {
     if (sides[0].value > 0 && sides[1].value > 0) {
-      output.innerText = "The length of Hypotenuse is " + lengthOfHypotenuse;
+      output.innerText =
+        "The length of Hypotenuse is " + lengthOfHypotenuse + " cm";
     } else {
       output.innerText =
         "The length of a & b (i.e. both side) should be greater than Zero";
