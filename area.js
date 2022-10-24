@@ -15,7 +15,7 @@ function calculateArea() {
 
   if (sides[0].value !== "" && sides[1].value !== "") {
     if (sides[0].value > 0 && sides[1].value > 0) {
-      output.innerText = "Area of Traingle is " + value;
+      output.innerText = "Area of Traingle is " + value + " cm²";
     } else {
       output.innerText = "Area and Height Should be Greater than Zero";
     }
